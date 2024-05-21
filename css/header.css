@@ -4,12 +4,7 @@ header * {
     margin: 0;
   }
   
-  /* --- DEFAULT DESIGN: SMARTPHONE --- */
   
-  .burger {
-    color: var(--NeutralMedium);
-    margin-top: 5px;
-  }
   
   .menu-selected {
     color: var(--Primary);
@@ -78,12 +73,8 @@ header * {
     color: var(--SecondaryDark);
   }
   
-  #chkToggle:checked+ul.main-nav,
-  #chkToggle:checked+a.btn {
-    display: block;
-  }
   
-  /* --- TABLET ADJUSTMENTS --- */
+  
   
   @media screen and (min-width: 768px) {
     .navbar {
@@ -94,10 +85,7 @@ header * {
       align-items: center;
     }
   
-    #chkToggle:checked+ul.main-nav,
-    #chkToggle:checked+a.btn {
-      display: flex;
-    }
+    
   
     .main-nav {
       display: flex;
@@ -130,4 +118,4 @@ header * {
     #menuBtn {
       margin-top: 0;
     }
-  }
+  
