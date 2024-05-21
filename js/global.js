@@ -84,9 +84,7 @@ async function load(page) {
   
     async connectedCallback() {
       this.innerHTML = `
-          <style>
-              ${await load("../css/newsletter.css")}
-          </style>
+          
           `;
       this.innerHTML += await load("../index/newsletter.html");
     }
