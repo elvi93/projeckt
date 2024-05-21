@@ -1,0 +1,133 @@
+header * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* --- DEFAULT DESIGN: SMARTPHONE --- */
+  
+  .burger {
+    color: var(--NeutralMedium);
+    margin-top: 5px;
+  }
+  
+  .menu-selected {
+    color: var(--Primary);
+  }
+  
+  .navbar {
+    font-size: 18px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    width: 90%;
+  }
+  
+  .main-nav {
+    display: none;
+    list-style-type: none;
+    color: var(--NeutralMedium);
+    font-family: "Roboto";
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+  
+  .nav-links,
+  .logo {
+    text-decoration: none;
+  }
+  
+  .nav-links:hover {
+    color: var(--Primary);
+    text-decoration: underline;
+  }
+  
+  .main-nav li {
+    text-align: center;
+    margin: 15px auto;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    margin-left: 0;
+  }
+  
+  .navbar a.btn {
+    background-color: var(--Primary);
+    color: var(--White);
+    padding: 15px;
+    font-weight: normal;
+  }
+  
+  .navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+  }
+  
+  #chkToggle {
+    display: none;
+  }
+  
+  #menuBtn:hover {
+    color: var(--SecondaryDark);
+  }
+  
+  #chkToggle:checked+ul.main-nav,
+  #chkToggle:checked+a.btn {
+    display: block;
+  }
+  
+  /* --- TABLET ADJUSTMENTS --- */
+  
+  @media screen and (min-width: 768px) {
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 0;
+      height: 70px;
+      align-items: center;
+    }
+  
+    #chkToggle:checked+ul.main-nav,
+    #chkToggle:checked+a.btn {
+      display: flex;
+    }
+  
+    .main-nav {
+      display: flex;
+      margin-right: 30px;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  
+    .main-nav li {
+      margin: 0;
+    }
+  
+    .nav-links {
+      margin-left: 40px;
+    }
+  
+    .logo {
+      position: static;
+      margin-left: 90px;
+    }
+  
+    .navbar-toggle {
+      display: none;
+    }
+  
+    .nav-links:hover {
+      color: var(--Primary);
+    }
+  
+    #menuBtn {
+      margin-top: 0;
+    }
+  }
