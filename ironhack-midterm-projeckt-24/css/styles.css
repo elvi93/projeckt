@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto:wght@100;300;400;500&display=swap");
+
+:root {
+  --primary: #072ac8;
+  --primaryLight: #a2d6f9;
+  --primaryLighter: #d1edff;
+  --secondaryLight: #fce300;
+  --secondaryDark: #ffc600;
+  --neutralLight: #f4f6fc;
+  --neutralMedium: #6b708d;
+  --neutralDark: #292e47;
+  --wrong: #b33a3a;
+  --right: #28a428;
+  --white: #fff;
+  --black: #000;
+  --diameter: 25vw;
+  --circular-line-width: 2px;
+  --background: #000;
+  --line-color: #ff0055;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  background-color: #f2f4fc;
+  color: #292e47;
+}
+
+section,
+footer {
+  max-width: 1063px;
+  margin: auto;
+}
+
+
+ 

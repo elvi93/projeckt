@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <!-- CSS Inyection -->
+    <link rel="stylesheet" href="../css/contact-us.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- Google Font's Inyection -->
+    <!-- Google Fonts -  is done Through CSS inyection -->
+
+    <!-- TO add the script tag + defer attribute to load script file after the html is parsed on the webpage -->
+    <script src="../js/contact.js" defer></script>
+    <script src="../js/loader-animation.js" defer></script>
+    <script src="../js/global.js" defer></script>
+  </head>
+  <body>
+    <!-- ----- -->
+    <!-- ----- -->
+    <!-- ----- -->
+    <!-- Splash Loader Code Start -->
+    <div class="splash">
+      <div class="circle2">
+        <div class="outer-circle"></div>
+        <div class="inner-circle"></div>
+        <div class="box box-top-left"></div>
+        <div class="box box-bottom-left"></div>
+        <div class="box box-bottom-right"></div>
+        <div class="box box-top-right"></div>
+      </div>
+    </div>
+    <!-- Splash Loader Code End -->
+    <!-- ----- -->
+    <!-- ----- -->
+    <!-- ----- -->
+    <header-component></header-component>
+
+      
+    <!-- Contzct Us Section -->
+    <section id="contact-main">
+      <div class="txt-title">
+        <div id="contact-form" class="form-container">
+          <form id="form-message">
+            <!-- Name  -->
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name" required />
+            <!-- Email + Phone Cont -->
+            <div class="email-phone">
+              <!-- Email  -->
+              <div>
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <!-- Phone  -->
+              <div>
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" required />
+              </div>
+            </div>
+            <!-- Text Area Cont -->
+            <!-- Body Of Message  -->
+            <label for="message">Write Your Message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Enter your message here......"
+            ></textarea>
+            <button type="submit" class="btn-submit">Submit Form</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+  </body>
+</html>
