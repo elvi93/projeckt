@@ -4,23 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Circle Agency – Home</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/styles.css" />   
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/splash-loader.css" />
-    <!-- TO add the script tag + defer attribute to load script file after the html is parsed on the webpage -->
+    <!-- Load scripts after the HTML is parsed -->
     <script src="./js/index.js" defer></script>
-    <script src="./js/loader-animation.js" dafer></script>
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/logos/favicon.ico">
+    <script src="./js/loader-animation.js" defer></script>
     <script src="./js/global.js"></script>
     <script src="./js/loader-animations.js"></script>
   </head>
   <body>
-    <!-- ----- -->
-    <!-- ----- -->
+
     <!-- Splash Loader Code Start -->
-    <div class="splash" >
+    <div class="splash">
       <div class="circle2">
         <div class="outer-circle"></div>
         <div class="inner-circle"></div>
@@ -31,59 +27,158 @@
       </div>
     </div>
     <!-- Splash Loader Code End -->
-    <!-- ----- -->
-    <!-- ----- -->
-    
-    <!-- ----- -->
-    <!-- ----- -->
-    <!-- fetch header-component-->
+
+    <!-- Header Component -->
     <header-component></header-component>
-    <!-- fetch header-component-->
-    <!-- ----- -->
-    <!-- ----- -->
-    
-   
-    <!-- ----- -->
-    <!-- ----- -->
-    <!-- Hero section -->
-   <section class="hero">
-      <div class="hero-content">
-          <h1 class="capitalize">Empower your Business with stunning desing!</h1>
-          <h3>Circle is a digital design and development studio. We design and
-              develop astonishing websites and mobile apps.</h3>
-          <div class="hero-content-buttons">
-              <a class="btn" href="#newsletter">Get in touch</a>
-              <a href="#projects">See our work</a>
-          </div>
-      </div>
-      <div class="hero-images">
-          <img class="img-hero" src="./assets/hero-section/hero-image.png" alt="Hero image">
-          <img class="img-card" src="./assets/hero-section/card-1.png" alt="Choose your credit card">
-          <img class="img-card img-card-botton" src="./assets/hero-section/card-2.png"
-              alt="Project has been accepted card">
-      </div>
-  </section>
-   <!-- Hero Section end-->  
-   <!-- ----- -->
-   <!-- ----- -->
-    
 
-    <!-- ----- -->
-    <!-- ----- -->
-    <!-- fetch newsletter-component-->
+    <!-- Hero Section -->
+    <section id="main">
+        <div class="vertical-container container">
+            <div class="texts">
+                <h1>Empower Your Business With Stunning Design!</h1>
+                <h4 class="light-grey">
+                    Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.
+                </h4>
+                <div class="two-buttons vertical-container">
+                    <a href="contact.html" class="blue-btn">Get in touch</a>
+                    <a href="#recent-projects" class="button-white light-grey">See our work</a>
+                </div>
+            </div>
+            <div class="hero-shot">
+                <img class="hero"
+                    src="./assets/hero-section/hero-image.png">
+                <img class="visible card1"
+                    src="./assets/hero-section/card-1.png"
+                    alt="man smiling smiling at the camera">
+                <img class="visible card2"
+                    src="./assets/hero-section/card-2.png">
+            </div>
+        </div>
+    </section>
+    <!-- Clients Section -->
+    <section class="clients">
+        <a href="https://www.airbnb.com" target="_blank">
+            <img class="img-client" src="./assets/logos/airbnb-logo.svg" alt="airbnb logo">
+        </a>
+        <a href="https://www.google.com" target="_blank">
+            <img class="img-client" src="./assets/logos/google-logo.svg" alt="Google logo">
+        </a>
+        <a href="https://www.microsoft.com" target="_blank">
+            <img class="img-client" src="./assets/logos/microsoft-logo.svg" alt="Microsoft logo">
+        </a>
+        <a href="https://www.fedex.com" target="_blank">
+            <img class="img-client" src="./assets/logos/fedex-logo.svg" alt="FedEx logo">
+        </a>
+        <a href="https://www.amazon.com" target="_blank">
+            <img class="img-client" src="./assets/logos/amazon-logo.svg" alt="amazon logo">
+        </a>
+    </section>
+
+    <!-- Recent Projects Section -->
+    <section id="projects" class="recent-projects" hidden>
+        <h2 class="capitalize">Recent projects</h2>
+        <div class="projects-container">
+            <article class="project-card">
+                <a class="project-wrapper" href="./pages/projects.html?id=1">
+                    <img class="img-project" src="./assets/projects-section/1.jpg" alt="Project 1">
+                    <div class="project-inner-card">
+                        <h4 class="project-title">Simplify (Static)</h4>
+                        <p class="project-description capitalize">UI design & App development</p>
+                        <a class="learn-more" href="./pages/projects.html?id=1">Learn more</a>
+                    </div>
+                </a>
+            </article>
+            <article class="project-card">
+                <a class="project-wrapper" href="./index/projects.html?id=2">
+                    <img class="img-project" src="./assets/projects-section/2.jpg" alt="Project 2">
+                    <div class="project-inner-card">
+                        <h4 class="project-title">Dashcoin</h4>
+                        <p class="project-description capitalize">Web development</p>
+                        <a class="learn-more" href="./index/projects.html?id=2">Learn more</a>
+                    </div>
+                </a>
+            </article>
+            <article class="project-card">
+                <a class="project-wrapper" href="./index/projects.html?id=3">
+                    <img class="img-project" src="./assets/projects-section/3.jpg" alt="Project 3">
+                    <div class="project-inner-card">
+                        <h4 class="project-title">Vectorify</h4>
+                        <p class="project-description capitalize">User experience design</p>
+                        <a class="learn-more" href="./index/projects.html?id=3">Learn more</a>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial">
+        <div class="testimonial-memojis">
+            <img class="testimonial-memoji1" src="./assets/testimonial-section/memoji-1.png" alt="Memoji 1">
+            <img class="testimonial-memoji2" src="./assets/testimonial-section/memoji-2.png" alt="Memoji 2">
+            <img class="testimonial-memoji3" src="./assets/testimonial-section/memoji-3.png" alt="Memoji 3">
+            <img class="testimonial-memoji4" src="./assets/testimonial-section/memoji-4.png" alt="Memoji 4">
+        </div>
+        <div class="testimonial-text">
+            <h3 class="capitalize">Hear what our clients have to say</h3>
+            <p>
+                "Circle helped us through every stage of our startup.
+                <br>
+                We really enjoyed working with you."
+            </p>
+        </div>
+        <div class="testimonial-profile">
+            <img class="testimonial-profile-img" src="./assets/testimonial-section/profile.png" alt="Kristin Watson profile image">
+            <div class="testimonial-profile-info">
+                <p class="name">Kristin Watson</p>
+                <p class="origin">Booking.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2 class="capitalize">Our services</h2>
+        <div class="services-container">
+            <article class="services-card">
+                <div class="img-services">
+                    <img src="./assets/services-section/icons/1.svg" alt="User interface design icon">
+                </div>
+                <h4 class="capitalize">User interface design</h4>
+                <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
+                <a class="learn-more" href="#">Learn more</a>
+            </article>
+            <article class="services-card">
+                <div class="img-services">
+                    <img src="./assets/services-section/icons/2.svg" alt="User experience design icon">
+                </div>
+                <h4 class="capitalize">User experience design</h4>
+                <p>Circle always focuses on delivering the best user experience to your customers.</p>
+                <a class="learn-more" href="#">Learn more</a>
+            </article>
+            <article class="services-card">
+                <div class="img-services">
+                    <img src="./assets/services-section/icons/3.svg" alt="Application development icon">
+                </div>
+                <h4 class="capitalize">Application development</h4>
+                <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
+                <a class="learn-more" href="#">Learn more</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Newsletter Component -->
     <newsletter-component id="newsletter"></newsletter-component>
-    <!-- fetch newsletter-component end-->
-    <!-- ----- -->
-    <!-- ----- -->
-    
 
-    <!-- ----- -->
-    <!-- ----- -->
-    <!-- fetch footer-component-->
+    <!-- Scroll to Top Button -->
+    <div class="scroll-to-top">
+        <span class="fa fa-arrow-up btn-scroll btn-scroll-position btn-scroll-style"></span>
+    </div>
+
+    <!-- Footer Component -->
     <footer-component></footer-component>
-    <!-- fetch footer-component end-->
-    <!-- ----- -->
-    <!-- ----- -->
-    
+
+    <script src="./js/scroll.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

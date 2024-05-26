@@ -6,14 +6,9 @@ header * {
   
   /* --- DEFAULT DESIGN: SMARTPHONE --- */
   
-  .burger {
-    color: var(--NeutralMedium);
-    margin-top: 5px;
-  }
   
-  .menu-selected {
-    color: var(--Primary);
-  }
+  
+ 
   
   .navbar {
     font-size: 18px;
@@ -60,28 +55,19 @@ header * {
     padding: 15px;
     font-weight: normal;
   }
+
+  #menuBtn {
+    background-color: #072AC8;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 17px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
   
-  .navbar-toggle {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    cursor: pointer;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 24px;
-  }
-  
-  #chkToggle {
-    display: none;
-  }
-  
-  #menuBtn:hover {
-    color: var(--SecondaryDark);
-  }
-  
-  #chkToggle:checked+ul.main-nav,
-  #chkToggle:checked+a.btn {
-    display: block;
-  }
+ 
   
   /* --- TABLET ADJUSTMENTS --- */
   
