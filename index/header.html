@@ -1,12 +1,13 @@
 <header>
   <nav class="navbar">
-    
-
+    <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+      <i class="fa fa-bars burger"></i>
     </label>
     <a class="logo" href="../index.html">
       <img src="../assets/logos/circle.svg" alt="Circle Logo" />
     </a>
-    <ul class="main-nav">
+    <input type="checkbox" id="chkToggle" />
+    <ul class="main-nav" id="js-menu">
       <li>
         <a class="nav-links menu-selected" href="../index.html">Home</a>
       </li>
@@ -17,6 +18,6 @@
         <a class="nav-links" href="../index.html#services">Services</a>
       </li>
     </ul>
-    <a  id="menuBtn" href="../index/contact.html">Contact us</a>
+    <a class="btn capitalize" id="menuBtn" href="../pages/contact.html">Contact us</a>
   </nav>
 </header>

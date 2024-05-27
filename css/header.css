@@ -118,3 +118,40 @@ header * {
       margin-top: 0;
     }
   }
+
+  /* Hide the main navigation by default */
+.main-nav {
+  display: none;
+}
+
+/* Media query for screens with a maximum width of 767px */
+@media only screen and (max-width: 767px) {
+  .burger {
+    color: var(--NeutralMedium);
+    margin-top: 5px;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    text-align: center;
+    background-color: #f9f9f9;
+    position: absolute;
+    top: 60px; /* Adjust as needed */
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .main-nav li {
+    padding: 10px 0;
+  }
+
+  .nav-links {
+    margin-right: 0;
+  }
+
+  /* Show the main navigation when burger icon is checked */
+  #chkToggle:checked + .burger + .main-nav {
+    display: flex;
+  }
+}
