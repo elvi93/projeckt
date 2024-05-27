@@ -35,8 +35,8 @@ html {
 .hero-container {
   width: 80%;
   display: flex;
-  flex-direction: row; /* Change flex direction to row */
-  justify-content: space-between; /* Add space between elements */
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   gap: 2vh;
   margin: 0;
@@ -65,7 +65,7 @@ h4 {
 
 .hero-btn {
   display: flex;
-  align-items: center; /* Center buttons vertically */
+  align-items: center;
   font-size: 17px;
   font-weight: 500;
 }
@@ -128,8 +128,8 @@ h4 {
 
 /* Clients Section styles */
 #clients {
-  width: 100%; 
-  overflow: hidden; 
+  width: 100%;
+  overflow: hidden;
   margin: 0 auto;
   position: relative;
 }
@@ -175,7 +175,6 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .memojis {
@@ -263,89 +262,74 @@ h4 {
   border-radius: 50%;
 }
 
-/* Services Section styles */
-.services {
-  padding: 50px 0;
-}
-
-.services h2 {
-  text-align: center;
-}
-
-.services-container {
-  display: flex;
-  justify-content: space-around;
-}
-
-.services-card {
-  flex: 1;
-  margin: 20px;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.img-services {
-  margin-bottom: 20px;
-}
-
-.services-card h4 {
-  margin-bottom: 10px;
-}
-
-.services-card p {
-  margin-bottom: 20px;
-}
-
-.learn-more {
-  font-size: 17px;
-  font-weight: 500;
-  text-decoration: none;
-  color: #072AC8;
-}
 
 
-/* Hide the main navigation by default */
-.main-nav {
-  display: none;
-}
 
-/* Media query for screens with a maximum width of 767px */
-@media only screen and (max-width: 767px) {
-  .burger-icon {
-    display: block; /* Display the burger icon for screens up to 767px */
-  }
-
-  .main-nav {
-    flex-direction: column;
-    text-align: center;
-    background-color: #f9f9f9;
-    position: absolute;
-    top: 60px; /* Adjust as needed */
-    left: 0;
-    right: 0;
-    z-index: 1;
-  }
-
-  .main-nav li {
-    padding: 10px 0;
-  }
-
-  .nav-links {
-    margin-right: 0;
-  }
-
-  /* Show the main navigation when burger icon is checked */
-  #chkToggle:checked + .burger-icon + .main-nav {
-    display: flex;
-  }
-}
 /* Media query for screens with a maximum width of 990px */
 @media only screen and (max-width: 990px) {
   .card1,
   .card2 {
-    display: none; /* Hide card1 and card2 images */
+    display: none;
+  }
+}
+
+/* Additional media queries for responsiveness */
+@media screen and (max-width: 480px) {
+  .hero-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  .text {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .hero-btn {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .blue-btn, .white-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .blue-btn, .white-btn {
+    width: auto;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-container {
+    width: 100%;
+  }
+
+  .text {
+    width: 50%;
+  }
+
+  .hero {
+    max-width: 100%;
   }
 }
