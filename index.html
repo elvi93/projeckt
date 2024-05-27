@@ -11,8 +11,9 @@
     <script src="./js/index.js" defer></script>
     <script src="./js/loader-animation.js" defer></script>
     <script src="./js/global.js"></script>
-    <script src="./js/loader-animations.js"></script>
-  </head>
+    <script src="./js/animation.js"></script>
+     
+</head>
   <body>
 
     <!-- Splash Loader Code Start -->
@@ -32,106 +33,80 @@
     <header-component></header-component>
 
     <!-- Hero Section -->
-    <section id="main">
-        <div class="vertical-container container">
-            <div class="texts">
+    <section id="hero">
+        <div class="hero-container container">
+            <div class="text">
                 <h1>Empower Your Business With Stunning Design!</h1>
-                <h4 class="light-grey">
+                <h4>
                     Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.
                 </h4>
-                <div class="two-buttons vertical-container">
-                    <a href="contact.html" class="blue-btn">Get in touch</a>
-                    <a href="#recent-projects" class="button-white light-grey">See our work</a>
+                <div class="hero-btn hero-container">
+                    <a href="./index/contact.html" class="blue-btn">Get in touch</a>
+                    <a href="#recent-projects" class="white-btn">See our work</a>
                 </div>
             </div>
-            <div class="hero-shot">
+            <div class="hero-img">
                 <img class="hero"
                     src="./assets/hero-section/hero-image.png">
-                <img class="visible card1"
+                <img class="card1"
                     src="./assets/hero-section/card-1.png"
                     alt="man smiling smiling at the camera">
-                <img class="visible card2"
+                <img class="card2"
                     src="./assets/hero-section/card-2.png">
             </div>
         </div>
     </section>
     <!-- Clients Section -->
-    <section class="clients">
-        <a href="https://www.airbnb.com" target="_blank">
-            <img class="img-client" src="./assets/logos/airbnb-logo.svg" alt="airbnb logo">
-        </a>
-        <a href="https://www.google.com" target="_blank">
-            <img class="img-client" src="./assets/logos/google-logo.svg" alt="Google logo">
-        </a>
-        <a href="https://www.microsoft.com" target="_blank">
-            <img class="img-client" src="./assets/logos/microsoft-logo.svg" alt="Microsoft logo">
-        </a>
-        <a href="https://www.fedex.com" target="_blank">
-            <img class="img-client" src="./assets/logos/fedex-logo.svg" alt="FedEx logo">
-        </a>
-        <a href="https://www.amazon.com" target="_blank">
-            <img class="img-client" src="./assets/logos/amazon-logo.svg" alt="amazon logo">
-        </a>
+    <section id="clients">
+        <div class="client-logos" id="logos">
+            <a href="https://www.airbnb.com" target="_blank">
+                <img class="img-client" src="./assets/logos/airbnb-logo.svg" alt="airbnb logo">
+            </a>
+            <a href="https://www.google.com" target="_blank">
+                <img class="img-client" src="./assets/logos/google-logo.svg" alt="Google logo">
+            </a>
+            <a href="https://www.microsoft.com" target="_blank">
+                <img class="img-client" src="./assets/logos/microsoft-logo.svg" alt="Microsoft logo">
+            </a>
+            <a href="https://www.fedex.com" target="_blank">
+                <img class="img-client" src="./assets/logos/fedex-logo.svg" alt="FedEx logo">
+            </a>
+            <a href="https://www.amazon.com" target="_blank">
+                <img class="img-client" src="./assets/logos/amazon-logo.svg" alt="amazon logo">
+            </a>
+        </div>
     </section>
-
     <!-- Recent Projects Section -->
-    <section id="projects" class="recent-projects" hidden>
-        <h2 class="capitalize">Recent projects</h2>
-        <div class="projects-container">
-            <article class="project-card">
-                <a class="project-wrapper" href="./pages/projects.html?id=1">
-                    <img class="img-project" src="./assets/projects-section/1.jpg" alt="Project 1">
-                    <div class="project-inner-card">
-                        <h4 class="project-title">Simplify (Static)</h4>
-                        <p class="project-description capitalize">UI design & App development</p>
-                        <a class="learn-more" href="./pages/projects.html?id=1">Learn more</a>
-                    </div>
-                </a>
-            </article>
-            <article class="project-card">
-                <a class="project-wrapper" href="./index/projects.html?id=2">
-                    <img class="img-project" src="./assets/projects-section/2.jpg" alt="Project 2">
-                    <div class="project-inner-card">
-                        <h4 class="project-title">Dashcoin</h4>
-                        <p class="project-description capitalize">Web development</p>
-                        <a class="learn-more" href="./index/projects.html?id=2">Learn more</a>
-                    </div>
-                </a>
-            </article>
-            <article class="project-card">
-                <a class="project-wrapper" href="./index/projects.html?id=3">
-                    <img class="img-project" src="./assets/projects-section/3.jpg" alt="Project 3">
-                    <div class="project-inner-card">
-                        <h4 class="project-title">Vectorify</h4>
-                        <p class="project-description capitalize">User experience design</p>
-                        <a class="learn-more" href="./index/projects.html?id=3">Learn more</a>
-                    </div>
-                </a>
-            </article>
-        </div>
-    </section>
-
+    
     <!-- Testimonial Section -->
-    <section class="testimonial">
-        <div class="testimonial-memojis">
-            <img class="testimonial-memoji1" src="./assets/testimonial-section/memoji-1.png" alt="Memoji 1">
-            <img class="testimonial-memoji2" src="./assets/testimonial-section/memoji-2.png" alt="Memoji 2">
-            <img class="testimonial-memoji3" src="./assets/testimonial-section/memoji-3.png" alt="Memoji 3">
-            <img class="testimonial-memoji4" src="./assets/testimonial-section/memoji-4.png" alt="Memoji 4">
-        </div>
-        <div class="testimonial-text">
-            <h3 class="capitalize">Hear what our clients have to say</h3>
-            <p>
-                "Circle helped us through every stage of our startup.
-                <br>
-                We really enjoyed working with you."
-            </p>
-        </div>
-        <div class="testimonial-profile">
-            <img class="testimonial-profile-img" src="./assets/testimonial-section/profile.png" alt="Kristin Watson profile image">
-            <div class="testimonial-profile-info">
-                <p class="name">Kristin Watson</p>
-                <p class="origin">Booking.com</p>
+    <section id="opinions">
+        <div class="memojis">
+            <img class="memoji1 visible"
+                src="./assets/testimonial-section/memoji-1.png"
+                alt="memoji1" />
+            <img class="memoji2 visible"
+                src="./assets/testimonial-section/memoji-2.png"
+                alt="memoji2" />
+            <img class="memoji3 visible"
+                src="./assets/testimonial-section/memoji-3.png"
+                alt="memoji3" />
+            <img class="memoji4 visible"
+                src="./assets/testimonial-section/memoji-4.png"
+                alt="memoji4" />
+            <div class="personal-opinion">
+                <h2 class="white">Hear What Our Clients Have To Say</h2>
+                <h3 class="yellow">
+                    "Circle helped us through every stage of our startup.<br />We really enjoyed working with you."
+                </h3>
+                <div class="card">
+                    <img class="profile-pic"
+                        src="./assets/testimonial-section/profile.png"
+                        alt="profile pic" />
+                    <div class="card-texts">
+                        <h5 class="light-blue">Kristin Watson</h5>
+                        <h6 class="white">Booking.com</h6>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

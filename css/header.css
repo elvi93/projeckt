@@ -3,8 +3,23 @@ header * {
     padding: 0;
     margin: 0;
   }
+
+
+  #menuBtn {
+    background-color: #072AC8;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 17px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+  #menuBtn:hover {
+       background-color: #292e47;
+  }
   
-  /* --- DEFAULT DESIGN: SMARTPHONE --- */
+ 
   
   
   
@@ -20,7 +35,7 @@ header * {
   .main-nav {
     display: none;
     list-style-type: none;
-    color: var(--NeutralMedium);
+   
     font-family: "Roboto";
     font-size: 17px;
     font-weight: 500;
@@ -33,7 +48,7 @@ header * {
   }
   
   .nav-links:hover {
-    color: var(--Primary);
+    
     text-decoration: underline;
   }
   
@@ -50,26 +65,17 @@ header * {
   }
   
   .navbar a.btn {
-    background-color: var(--Primary);
+    
     color: var(--White);
     padding: 15px;
     font-weight: normal;
   }
 
-  #menuBtn {
-    background-color: #072AC8;
-    color: white;
-    text-decoration: none;
-    padding: 15px 20px;
-    font-size: 17px;
-    font-weight: 500;
-    white-space: nowrap;
-}
+
 
   
  
-  
-  /* --- TABLET ADJUSTMENTS --- */
+
   
   @media screen and (min-width: 768px) {
     .navbar {
@@ -80,10 +86,7 @@ header * {
       align-items: center;
     }
   
-    #chkToggle:checked+ul.main-nav,
-    #chkToggle:checked+a.btn {
-      display: flex;
-    }
+  
   
     .main-nav {
       display: flex;
@@ -109,9 +112,7 @@ header * {
       display: none;
     }
   
-    .nav-links:hover {
-      color: var(--Primary);
-    }
+   
   
     #menuBtn {
       margin-top: 0;
