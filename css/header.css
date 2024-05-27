@@ -1,157 +1,120 @@
 header * {
-    box-sizing: border-box;
-    padding: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+#menuBtn {
+  background-color: #072AC8;
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  font-size: 17px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+#menuBtn:hover {
+     background-color: #292e47;
+}
+
+
+
+
+
+
+
+.navbar {
+  font-size: 18px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  width: 90%;
+}
+
+.main-nav {
+  display: none;
+  list-style-type: none;
+ 
+  font-family: "Roboto";
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+}
+
+.nav-links:hover {
+  
+  text-decoration: underline;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  margin-left: 0;
+}
+
+.navbar a.btn {
+  
+  color: var(--White);
+  padding: 15px;
+  font-weight: normal;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+
+
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
     margin: 0;
   }
 
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .logo {
+    position: static;
+    margin-left: 90px;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+ 
 
   #menuBtn {
-    background-color: #072AC8;
-    color: white;
-    text-decoration: none;
-    padding: 15px 20px;
-    font-size: 17px;
-    font-weight: 500;
-    white-space: nowrap;
-}
-
-  #menuBtn:hover {
-       background-color: #292e47;
-  }
-  
- 
-  
-  
-  
- 
-  
-  .navbar {
-    font-size: 18px;
-    margin-top: 20px;
-    padding-bottom: 10px;
-    width: 90%;
-  }
-  
-  .main-nav {
-    display: none;
-    list-style-type: none;
-   
-    font-family: "Roboto";
-    font-size: 17px;
-    font-weight: 500;
-    line-height: 22px;
-  }
-  
-  .nav-links,
-  .logo {
-    text-decoration: none;
-  }
-  
-  .nav-links:hover {
-    
-    text-decoration: underline;
-  }
-  
-  .main-nav li {
-    text-align: center;
-    margin: 15px auto;
-  }
-  
-  .logo {
-    position: absolute;
-    top: 20px;
-    left: 30px;
-    margin-left: 0;
-  }
-  
-  .navbar a.btn {
-    
-    color: var(--White);
-    padding: 15px;
-    font-weight: normal;
-  }
-
-
-
-  
- 
-
-  
-  @media screen and (min-width: 768px) {
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 0;
-      height: 70px;
-      align-items: center;
-    }
-  
-  
-  
-    .main-nav {
-      display: flex;
-      margin-right: 30px;
-      flex-direction: row;
-      justify-content: flex-end;
-    }
-  
-    .main-nav li {
-      margin: 0;
-    }
-  
-    .nav-links {
-      margin-left: 40px;
-    }
-  
-    .logo {
-      position: static;
-      margin-left: 90px;
-    }
-  
-    .navbar-toggle {
-      display: none;
-    }
-  
-   
-  
-    #menuBtn {
-      margin-top: 0;
-    }
-  }
-
-  /* Hide the main navigation by default */
-.main-nav {
-  display: none;
-}
-
-/* Media query for screens with a maximum width of 767px */
-@media only screen and (max-width: 767px) {
-  .burger {
-    color: var(--NeutralMedium);
-    margin-top: 5px;
-  }
-
-  .main-nav {
-    flex-direction: column;
-    text-align: center;
-    background-color: #f9f9f9;
-    position: absolute;
-    top: 60px; /* Adjust as needed */
-    left: 0;
-    right: 0;
-    z-index: 1;
-  }
-
-  .main-nav li {
-    padding: 10px 0;
-  }
-
-  .nav-links {
-    margin-right: 0;
-  }
-
-  /* Show the main navigation when burger icon is checked */
-  #chkToggle:checked + .burger + .main-nav {
-    display: flex;
+    margin-top: 0;
   }
 }
