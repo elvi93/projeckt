@@ -17,28 +17,7 @@ class Header extends HTMLElement {
         `;
     this.innerHTML += await load("../index/header.html");
 
-    const toggle = document.getElementById("chkToggle");
-    const menuBtn = document.getElementById("menuBtn");
-
-    toggle.addEventListener("change", (e) => {
-      menuBtn.style.display = e.target.checked ? "inline" : "none";
-    });
-
-    if (matchMedia) {
-      const mq = window.matchMedia("(min-width: 768px)");
-      mq.addEventListener("change", WindowResized);
-      WindowResized(mq);
-    }
-
     selectMenuOption();
-
-    function WindowResized(mq) {
-      if (mq.matches) {
-        menuBtn.style.display = "inline";
-      } else {
-        menuBtn.style.display = toggle.checked ? "inline" : "none";
-      }
-    }
 
     function selectMenuOption() {
       const page = getPageName();

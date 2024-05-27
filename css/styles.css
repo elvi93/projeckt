@@ -105,7 +105,7 @@ h4 {
 }
 
 .hero {
-  max-width: 550px;
+  max-width: 110%;
 }
 
 .hero-img img {
@@ -114,14 +114,14 @@ h4 {
 
 .card1 {
   position: absolute;
-  max-width: 275px;
+  max-width: 60%;
   top: 5%;
   left: -18%;
 }
 
 .card2 {
   position: absolute;
-  max-width: 275px;
+  max-width: 60%;
   bottom: -15%;
   right: -15%;
 }
@@ -340,5 +340,12 @@ h4 {
   /* Show the main navigation when burger icon is checked */
   #chkToggle:checked + .burger-icon + .main-nav {
     display: flex;
+  }
+}
+/* Media query for screens with a maximum width of 990px */
+@media only screen and (max-width: 990px) {
+  .card1,
+  .card2 {
+    display: none; /* Hide card1 and card2 images */
   }
 }
