@@ -1,9 +1,9 @@
+/* General Styles */
 header * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-
 
 #menuBtn {
   background-color: #072AC8;
@@ -16,14 +16,8 @@ header * {
 }
 
 #menuBtn:hover {
-     background-color: #292e47;
+  background-color: #292e47;
 }
-
-
-
-
-
-
 
 .navbar {
   font-size: 18px;
@@ -35,7 +29,6 @@ header * {
 .main-nav {
   display: none;
   list-style-type: none;
- 
   font-family: "Roboto";
   font-size: 17px;
   font-weight: 500;
@@ -48,7 +41,6 @@ header * {
 }
 
 .nav-links:hover {
-  
   text-decoration: underline;
 }
 
@@ -65,18 +57,27 @@ header * {
 }
 
 .navbar a.btn {
-  
   color: var(--White);
   padding: 15px;
   font-weight: normal;
 }
 
+/* Burger Menu Button */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
 
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: 0.4s;
+}
 
-
-
-
-
+/* Media Queries */
 @media screen and (min-width: 768px) {
   .navbar {
     display: flex;
@@ -85,8 +86,6 @@ header * {
     height: 70px;
     align-items: center;
   }
-
-
 
   .main-nav {
     display: flex;
@@ -112,9 +111,38 @@ header * {
     display: none;
   }
 
- 
-
   #menuBtn {
     margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #menuBtn {
+    display: none;
+  }
+  .navbar {
+    position: relative;
+  }
+
+  .navbar-toggle {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    width: 200px;
+    border: 1px solid #ccc;
+    display: none;
+  }
+
+  .main-nav.show {
+    display: flex;
   }
 }
